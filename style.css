@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.subMain {
+    margin: 1em auto;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    height: 75px;
+}
+
+#firstName, #emailAddress, #addressOne, #postcode, #town{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 65%;
+    width: 20em;
+    padding: 2px;
+
+}
+
+#lastName, #telephoneNumber, #addressTwo, #county, #country{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 20em;
+    padding: 2px;
+
+}
