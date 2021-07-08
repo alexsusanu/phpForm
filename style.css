@@ -1,6 +1,7 @@
 .main{
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
 }
 .subMain {
     margin: 1em auto;
