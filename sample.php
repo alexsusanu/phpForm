@@ -9,6 +9,7 @@
     <title>AlexSusanu</title>
 </head>
 <body>
+    <fieldset>
         <form>
             <div class="subMain">
                 <div id="firstName">
@@ -90,5 +91,6 @@
                 <input type="submit" value="Submit">
             </div>
         </form>
+    </fieldset>
 </body>
 </html>
