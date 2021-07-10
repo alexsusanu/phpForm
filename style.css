@@ -33,7 +33,9 @@ form{
 
 #description, textarea {
     display: flex;
-    flex-flow: column;;
+    flex-flow: column;
+    flex: 1;
+    padding: 4px;
 }
 
 input, textarea{

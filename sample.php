@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
+    <link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="styleMedia.css"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>AlexSusanu</title>
 </head>
 <body>
