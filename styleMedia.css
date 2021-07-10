@@ -1,0 +1,33 @@
+@media screen and (max-device-width: 800px)
+{
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .subMain {
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+        height: 0;
+        width: auto;
+        gap: 0;
+    }
+
+    #browseFile{
+        margin-left: 50px;
+    }
+
+    #submit{
+        margin: auto;
+    }
+
+}
