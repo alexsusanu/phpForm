@@ -12,12 +12,10 @@
     if(isset($_POST['submit'])) {
         $email = $_POST["email"];
         $pattern = "/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/";
-        $title = "please enter valid email [test@test.com].";
         if (!preg_match($pattern, $email)) {
-            //        echo $title;
-                    $error_email= "<span class='error'>Please enter valid email, like your@abc.com</span>";
-            //        header("Location: sample.php");
+            $error_email= "<span class='error'>Please enter valid email, ex: test@test.com</span>";
         }
+        mail("alexsusanu@icloud.com", "test", "hello");
     }
 ?>
 <body>
