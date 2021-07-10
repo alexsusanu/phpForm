@@ -8,30 +8,44 @@
     <meta name = "viewport" content = "width = device-width">
     <title>AlexSusanu</title>
 </head>
+<?php
+    if(isset($_POST['submit'])) {
+        $email = $_POST["email"];
+        $pattern = "/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/";
+        $title = "please enter valid email [test@test.com].";
+        if (!preg_match($pattern, $email)) {
+            //        echo $title;
+                    $error_email= "<span class='error'>Please enter valid email, like your@abc.com</span>";
+            //        header("Location: sample.php");
+        }
+    }
+?>
 <body>
-    <fieldset>
-        <form>
+<fieldset>
+        <form action="" method="post">
             <div class="subMain">
                 <div id="firstName">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName"/>
+                    <input type="text" id="firstName" required="required"/>
                 </div>
 
                 <div id="lastName">
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName">
+                    <input type="text" id="lastName" required="required">
                 </div>
             </div>
 
             <div class="subMain">
                 <div id="emailAddress">
                     <label for="emailAddress">Email Address</label>
-                    <input type="text" id="emailAddress">
+                    <input type="email" name="email" id="emailAddress" title="please enter valid email [test@test.com].">
+                    <?php echo $error_email ?>
                 </div>
+<!--                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"-->
 
                 <div id="telephoneNumber">
                     <label for="telephoneNumber">Telephone Number</label>
-                    <input type="text" id="telephoneNumber">
+                    <input type="tel" id="telephoneNumber" required="required" pattern="^[0-9]*$">
                 </div>
             </div>
 
@@ -76,6 +90,7 @@
                             echo "</option>'";
                         }
                         ?>
+                        <option selected="selected">United Kingdom</option>
                     </select>
                 </div>
             </div>
@@ -88,7 +103,7 @@
                 <p>Select a file &nbsp;<input type="file" value="Browse"></p>
             </div>
             <div id="submit">
-                <input type="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit">
             </div>
         </form>
     </fieldset>

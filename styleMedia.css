@@ -33,20 +33,50 @@
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
+    /*#browseFile{*/
+    /*    margin: auto;*/
+    /*    padding-left: 50px;*/
+    /*}*/
+
+    /*#submit{*/
+    /*    margin: auto;*/
+    /*}*/
+
+    /*.subMain{*/
+    /*    gap: 3em;*/
+    /*}*/
+
+    /*form{*/
+    /*    padding: 4%;*/
+    /*}*/
+    form{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .subMain {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+        height: 0;
+        width: 70%;
+        gap: 0;
+    }
+
     #browseFile{
-        margin: auto;
-        padding-left: 50px;
+        width: 25%;
+        margin: 0 auto;
     }
 
     #submit{
         margin: auto;
     }
 
-    .subMain{
-        gap: 3em;
-    }
-
-    form{
-        padding: 4%;
+    #description{
+        margin: 0 auto;
+        width: 70%;
     }
 }
