@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
-    <link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="styleMedia.css"/>
+    <link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="styleMedia.css"/>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name = "viewport" content = "width = device-width">
     <title>AlexSusanu</title>
 </head>
 <body>
