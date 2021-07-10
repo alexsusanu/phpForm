@@ -1,22 +1,25 @@
-.main{
+form{
     display: flex;
     flex-direction: column;
+    width:800px;
     max-width: 1200px;
+    margin:0 auto;
 }
 .subMain {
     margin: 1em auto;
     display: flex;
     flex-flow: row;
-    align-items: flex-start;
+    flex: 1;
     height: 75px;
+    width: inherit;
+    gap: 10em;
 }
 
 #firstName, #emailAddress, #addressOne, #postcode, #town{
     display: flex;
     flex-direction: column;
-    flex: 0 0 65%;
-    width: 20em;
-    padding: 2px;
+    flex: 1;
+    padding: 4px;
 
 }
 
@@ -24,7 +27,24 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 20em;
-    padding: 2px;
+    padding: 4px;
 
+}
+
+#description, textarea {
+    display: flex;
+    flex-flow: column;;
+}
+
+input, textarea{
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+input[type=submit] {
+    width: 20em;  height: 2em;
+}
+
+input[type=file]{
+    border:transparent;
 }
