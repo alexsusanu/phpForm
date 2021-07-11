@@ -39,10 +39,11 @@
 
     if(isset($_POST['submit'])) {
             $pattern = "/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/";
-            if (!preg_match($pattern, $emailDestination)) {
+            if (preg_match($pattern, $emailDestination)) {
+                mail($emailDestination, $subject, $message);
+            }else {
                 echo $emailError;
             }
-            mail($emailDestination, $subject, $message);
     }else{
         echo ("Form sent. Check your email");
     }
