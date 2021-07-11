@@ -39,18 +39,16 @@
 
     if(isset($_POST['submit'])) {
             $pattern = "/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/";
-            if (preg_match($pattern, $emailDestination)) {
+            if (preg_match($pattern, $emailDestination)) { //check email validation server side
                 mail($emailDestination, $subject, $message);
             }else {
                 echo $emailError;
             }
-    }else{
-        echo ("Form sent. Check your email");
     }
 ?>
 <body>
 <fieldset>
-        <form action="" method="post">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
             <div class="subMain">
                 <div id="firstName">
                     <label for="firstName">First Name</label>
