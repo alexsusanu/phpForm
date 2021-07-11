@@ -41,6 +41,8 @@
             $pattern = "/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/";
             if (preg_match($pattern, $emailDestination)) { //check email validation server side
                 mail($emailDestination, $subject, $message);
+                header("Location: form.php");
+                exit;
             }else {
                 echo $emailError;
             }
