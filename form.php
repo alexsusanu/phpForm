@@ -12,6 +12,7 @@
 <?php
 //    $emailSender = "testing@mousetrap.dev"; //testing email
     $emailError = "<span class='error'>Please enter valid email, ex: test@test.com</span>";
+    $emailSuccess = "Form sent!";
 
     //user information variables
     $emailDestination = $_POST['email'];
