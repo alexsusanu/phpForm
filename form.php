@@ -51,7 +51,7 @@
 ?>
 <body>
 <fieldset>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+        <form action="" method="post">
             <div class="subMain">
                 <div id="firstName">
                     <label for="firstName">First Name</label>
